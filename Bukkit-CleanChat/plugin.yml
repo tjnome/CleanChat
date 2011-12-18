@@ -1,0 +1,6 @@
+name: CleanChat
+main: cleanChat.tjnome.main
+version: 1.0.1
+website: 'http://www.minecraft.no'
+authors: ['tjnome']
+description: CleanChat Plugin
