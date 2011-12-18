@@ -1,5 +1,7 @@
-package cleanChat.tjnome.main;
+package cleanChat.tjnome.main.listener;
 import org.bukkit.event.block.BlockListener;
+
+import cleanChat.tjnome.main.CleanChat;
 
 /**
  *

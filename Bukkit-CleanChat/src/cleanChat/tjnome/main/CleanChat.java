@@ -6,6 +6,8 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import cleanChat.tjnome.main.conf.CleanChatConf;
+import cleanChat.tjnome.main.listener.CleanChatBlockListener;
+import cleanChat.tjnome.main.listener.CleanChatPlayerListener;
 
 /**
  * CleanChat for Bukkit

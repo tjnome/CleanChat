@@ -1,9 +1,10 @@
-package cleanChat.tjnome.main;
+package cleanChat.tjnome.main.listener;
 
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerListener;
 import org.bukkit.event.player.PlayerQuitEvent;
 
+import cleanChat.tjnome.main.CleanChat;
 import cleanChat.tjnome.main.conf.CleanChatConf;
 
 /**
