@@ -27,8 +27,8 @@ public class CleanChatConf {
 		this.configFile = new File(plugin.getDataFolder(), "config.yml");
 		
 		//Server
-		this.configDefaults.put("Server.login", false);
-		this.configDefaults.put("Server.logout", false);
+		this.configDefaults.put("Server.remove-login-msg", false);
+		this.configDefaults.put("Server.remove-logout-msg", false);
 		
 		if (!this.configFile.exists()) {
 			for (String key : this.configDefaults.keySet()) {
@@ -46,8 +46,8 @@ public class CleanChatConf {
 				e.printStackTrace();
 			}
 		}
-		this.login = config.getBoolean("Server.login");
-		this.logout = config.getBoolean("Server.logout");
+		this.login = config.getBoolean("Server.remove-login-msg");
+		this.logout = config.getBoolean("Server.remove-logout-msg");
 	}
 	
 	public void cleanup() {

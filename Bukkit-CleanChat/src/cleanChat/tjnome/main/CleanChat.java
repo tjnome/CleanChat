@@ -39,5 +39,9 @@ public class CleanChat extends JavaPlugin {
 		pm.registerEvent(Event.Type.PLAYER_QUIT, this.playerListener,Event.Priority.Normal, this);
 		pm.registerEvent(Event.Type.PLAYER_JOIN, this.playerListener,Event.Priority.Normal, this);
 	}
+	
+	public CleanChatConf getGlobalConfiguration() {
+		return configuration;
+	}
 
 }

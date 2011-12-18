@@ -4,6 +4,8 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerListener;
 import org.bukkit.event.player.PlayerQuitEvent;
 
+import cleanChat.tjnome.main.conf.CleanChatConf;
+
 /**
  *
  * @author tjnome
@@ -16,11 +18,17 @@ public class CleanChatPlayerListener extends PlayerListener {
     }
 
     public void onPlayerQuit(PlayerQuitEvent event) {
-    	event.setQuitMessage(null);
+    	CleanChatConf cfg = this.plugin.getGlobalConfiguration();
+    	if (cfg.logout) {
+    		event.setQuitMessage(null);
+    	}
 	}
     
     public void onPlayerJoin(PlayerJoinEvent event) {
-    	event.setJoinMessage(null);
+    	CleanChatConf cfg = this.plugin.getGlobalConfiguration();
+    	if (cfg.login) {
+    		event.setJoinMessage(null);
+    	}
     }
 }
 
