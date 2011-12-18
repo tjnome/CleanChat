@@ -27,8 +27,8 @@ public class CleanChatConf {
 		this.configFile = new File(plugin.getDataFolder(), "config.yml");
 		
 		//Server
-		this.configDefaults.put("Server.remove-login-msg", false);
-		this.configDefaults.put("Server.remove-logout-msg", false);
+		this.configDefaults.put("Server.remove-login-msg", true);
+		this.configDefaults.put("Server.remove-logout-msg", true);
 		
 		if (!this.configFile.exists()) {
 			for (String key : this.configDefaults.keySet()) {

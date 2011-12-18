@@ -1,5 +1,5 @@
 name: CleanChat
-main: cleanChat.tjnome.main
+main: cleanChat.tjnome.main.CleanChat
 version: 1.0.1
 website: 'http://www.minecraft.no'
 authors: ['tjnome']
