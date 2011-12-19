@@ -22,6 +22,10 @@ public class CleanChatPlayerListener extends PlayerListener {
     	CleanChatConf cfg = this.plugin.getGlobalConfiguration();
     	if (cfg.logout) {
     		event.setQuitMessage(null);
+    	} else {
+    		if (cfg.customizelogoutmsg) {
+    			event.setQuitMessage(this.plugin.colorTxt(cfg.logoutmsg));
+    		}
     	}
 	}
     
@@ -29,6 +33,10 @@ public class CleanChatPlayerListener extends PlayerListener {
     	CleanChatConf cfg = this.plugin.getGlobalConfiguration();
     	if (cfg.login) {
     		event.setJoinMessage(null);
+    	} else {
+    		if (cfg.customizeloginmsg) {
+    			event.setJoinMessage(this.plugin.colorTxt(cfg.loginmsg));
+    		}
     	}
     }
 }
